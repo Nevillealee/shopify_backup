@@ -1,0 +1,13 @@
+# PostgreSQL. Versions 9.3 and up are supported.
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: shopify_backup_development
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PW'] %>
+  host: localhost
+  port: 5432
