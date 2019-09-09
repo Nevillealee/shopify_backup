@@ -12,6 +12,8 @@ gem 'httparty'
 gem 'uglifier', '>= 2.7.2'
 gem 'jquery-rails'
 gem 'sass-rails', '~> 6.0'
+gem 'typhoeus'
+gem 'yajl-ruby', require: 'yajl'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
